@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.0;
+
+contract Storage {
+
+    uint public number;
+
+    function store(uint num) public {
+        number = num;
+    }
+
+    function retrieve() public view returns (uint){
+        return number;
+    }
+}
